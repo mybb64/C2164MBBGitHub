@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>TP Integrador Bootstrap</title>
+  </head>
+  
+  <body>
+    <header>
+    <!--inicio de nav-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+      <div class="container">
+         <a class="navbar-brand" href="#">
+           <img src="imagenes/codoacodo.png" height="auto"> Conf Bs As
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+               data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+           <ul class="navbar-nav " style="margin-left: auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#conferencia">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#oradores">Los Oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#lugar-fecha">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#convert">Conviértete en ordador</a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-success" href="tickets.html" tabindex="-1" aria-disabled="true">Comprar tickets</a>
+              </li>
+            </ul>
+         </div>
+       </div>
+     </nav>
+      <!--fin de nav-->
+    </header>
+
+    <main>
+      <!--Inicio slideshow-->
+      <section id="conferencia">
+         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+             <div class="carousel-inner">
+               <div class="carousel-item active">
+                 <img src="imagenes/ba1.jpg" class="d-block w-100 oscuro-50" alt="imgB1">
+               </div>
+               <div class="carousel-item">
+                 <img src="imagenes/ba2.jpg" class="d-block w-100 oscuro-50" alt="imgBa2">           
+               </div>
+               <div class="carousel-item">
+                 <img src="imagenes/ba3.jpg" class="d-block w-100 oscuro-50" alt="imgBa3">           
+               </div>
+             </div>
+          </div>
+         <!--fin slideshow-->
+      
+        <div class="slideshow-text text-white"> 
+           <h1 class="fs-5"> Conf Bs As</h1>
+           <p>Bs As llega por primera vez a Argentina. Un evento para compartir con
+             <br>nuestra comunidad el conocimiento y experincia de los expertos que
+             <br>están creando el futuro de Internet. Ven a conocer a miembros del 
+             <br>evento, a otros estudiantes de Codo a Codo y los oradores de primer 
+             <br>nivel que tenemos para ti. Te esperamos!
+           </p>
+           <div class="buttons" >
+              <a class="btn btn-outline-info btn-lg" href="#convert" role="button">Quiero ser orador</a>
+              <a class="btn btn-success btn-lg" href="tickets.html" role="button">Comprar tickets</a>
+           </div>
+        </div>
+        </section>
+   
+      <!-- inicio cards --> 
+      <section id="oradores">
+        <!-- parallax -->
+     <div class="parallax p-5 ">
+         <div class="container my-5"> 
+          <div class="container">
+            <div class="row mt-5 text-center ">
+               <p ><small class="text-uppercase text-secundary"> Conoce a los</small><br>
+                  <spam class="h2">ORADORES</spam>
+              </p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4  p-3">
+              <div class="col ">
+                <div class="card h-100 shadow-lg">
+                  <img src="imagenes/bill.jpg" class="card-img-top " alt="Bill">
+                  <div class="card-body">
+                    <button type="button" class="btn btn-warning btn-sm">JavaScript</button>
+                    <button type="button" class="btn btn-info btn-sm">React</button>
+                    <h5 class="card-title mt-2">Bill Gate</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                         laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 shadow-lg">
+                  <img src="imagenes/steve.jpg" class="card-img-top" alt="Steve">
+                  <div class="card-body">
+                    <button type="button" class="btn btn-warning btn-sm">JavaScript</button>
+                    <button type="button" class="btn btn-info btn-sm">React</button>
+                    <h5 class="card-title mt-2">Steve Jobs</h5>
+                    <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                                          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                          laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 shadow-lg">
+                  <img src="imagenes/ada.jpeg" class="card-img-top" alt="Ada">
+                  <div class="card-body">
+                    <button type="button" class="btn btn-secondary btn-sm text-light">Negocios</button>
+                    <button type="button" class="btn btn-danger btn-sm text-light">Stratups</button>
+                    <h5 class="card-title mt-2">Ada Lovelace</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                         laboris nisi ut aliquip ex ea commodo consequat.
+                   </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+          </div> 
+      </section>
+    <!-- fin cards -->    
+
+  <!-- img y txt -->
+  <section id="lugar-fecha">
+  <!-- parallax -->
+  <div class="parallax p-5 ">
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-12 col-md-6 p-0">
+          <img src="imagenes/honolulu.jpg" class="img-fluid">
+        </div>
+        <div class="col-12 col-md-6 bg-secondary text-light m-0 pb-3">
+          <h3 class="pt-3"> Bs. As. - Octubre</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+          </p>
+          <button type="button" class="btn btn-outline-light">Conocé más </button>
+        </div>
+      </div>
+   </div>
+  </div> 
+  </section>
+  <!-- fin img y text -->
+  
+  <!-- inicio form -->
+  <section id="convert">
+  <!-- parallax -->
+  <div class="parallax p-5 ">
+    <div class="container">
+        <div class="row mt-5 text-center ">
+          <p ><small class="text-uppercase text-secundary"> Conviértete en un</small><br>
+          <spam class="h2">ORADOR</spam></p>
+          <label for="basic-url" class="form-label">Anótate como orador para dar un
+          <abbr title="presentación de la idea central de un proyecto o visión en cinco minutos">charla ignite.</abbr>
+                Cuéntanos de que quieres hablar!</label>
+        </div>
+        <form>
+          <div class="row mt-3">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Apellido">
+            </div>
+          </div>
+          <div class="row pt-3">
+            <div class="col">
+              <textarea class="form-control" placeholder="Sobre qué querés hablar?"></textarea>
+              <label>Recuerda incluir un título para tu charla</label>
+            </div>
+          </div>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-success my-3 " type="button">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    </section>
+  <!-- fin form -->
+  
+  <!-- inicio footer -->
+    <footer>
+      <div class="row footer-container text-center  ms-0">
+      <div class="col mx-3 my-3"><a href="#">Preguntas frevuentes</a></div>
+      <div class="col mx-3 my-3"><a href="#">Contáctanos</a></div>
+      <div class="col mx-3 my-3"><a href="#">Prensa</a></div>
+      <div class="col mx-3 my-3"><a href="#">Conferencias</a></div>
+      <div class="col mx-3 my-3"><a href="#">Términos y condiciones</a></div>
+      <div class="col mx-3 my-3"><a href="#">Privacidad</a></div>
+      <div class="col mx-3 my-3"><a href="#">Estudiantes</a></div>
+    </footer >
+      <!-- Optional JavaScript; choose one of the two! -->
+  
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+  
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+      -->
+   </body>
+  </html>
+
+
+
+
+
+
+
+
+
+    
